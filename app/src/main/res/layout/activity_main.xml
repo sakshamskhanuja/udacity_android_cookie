@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_accent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Cookie ImageView -->
+    <ImageView
+        android:id="@id/cookie_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/description_before"
+        android:scaleType="centerCrop"
+        android:src="@drawable/before_cookie" />
+
+    <!-- Status TextView -->
+    <TextView
+        android:id="@id/status_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:text="@string/before_eating"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_size_large" />
+
+    <!-- Eat Cookie Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:onClick="changeStatus"
+        android:text="@string/button_eat" />
+</LinearLayout>
